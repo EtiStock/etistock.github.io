@@ -1,0 +1,10 @@
+<h1 style="color:white;font-size:50px" id="urlembed"></h1>
+<script>
+const url = "https://script.google.com/macros/s/AKfycbze_hPnnmDxC02-iLqyX-pKjOYLR4cSZkrSn0B4KXDyZeRVzycTSJifYZfb6GBl97XsXg/exec"
+fetch(url).then(response => response.text()).then(data => {
+let numbers = data
+var txt = document.createElement("span");
+txt.innerHTML = numbers;
+urlembed.appendChild(txt);
+})
+</script>
