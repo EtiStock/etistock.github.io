@@ -6,7 +6,7 @@ fetch(url).then(response => response.text()).then(data => {
   const doc = parser.parseFromString(data, 'text/html');
 
   const link = document.createElement("a");
-  link.href = url;
+  link.href = urlembed;
   link.innerHTML = doc.body.innerHTML;
 
   urlembed.appendChild(link);
